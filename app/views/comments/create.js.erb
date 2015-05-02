@@ -1,0 +1,4 @@
+$("#comment_content").before('<div id="flash_notice">Some message</div>');
+//$("#comment-count").html("<%#= @chat.comments.count %>");
+$("#comments").html("<%= @chat.comments.last %>");
+$('#comment_content').val('').focus();

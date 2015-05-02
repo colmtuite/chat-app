@@ -1,0 +1,22 @@
+//
+// Border radius
+// -------------
+
+// Equal corners
+// -------------
+
+.br-l      { border-radius: 10px; }
+.br-m      { border-radius: 4px; }
+.br-s      { border-radius: 2px; }
+.br-circle { border-radius: 50%; }
+
+// Unequal corners
+// -------------
+
+.brt-l      { border-radius: 10px 10px 0 0; }
+.brt-m      { border-radius: 4px 4px 0 0; }
+.brt-s      { border-radius: 2px 2px 0 0; }
+
+.brb-l      { border-radius: 0 0 10px 10px; }
+.brb-m      { border-radius: 0 0 4px 4px; }
+.brb-s      { border-radius: 0 0 2px 2px; }

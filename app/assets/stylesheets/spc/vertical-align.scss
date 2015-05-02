@@ -1,0 +1,15 @@
+//
+// Vertical Align
+// -------------
+
+// Depends on an appropriate `display` value.
+
+.va-baseline   { vertical-align: baseline; }
+.va-sub        { vertical-align: sub; }
+.va-super      { vertical-align: super; }
+.va-top        { vertical-align: top; }
+.va-textTop    { vertical-align: text-top; }
+.va-middle     { vertical-align: middle; }
+.va-bottom     { vertical-align: bottom; }
+.va-textBottom { vertical-align: text-bottom; }
+.va-inherit    { vertical-align: inherit; }

@@ -1,0 +1,57 @@
+//
+// Colors
+// -------------------------
+
+// This file depends on color-scheme.scss and
+// therefore must follow it in the compiler.
+
+// Single-responsibility classes for every color in the
+// color scheme.
+
+// Brand colors
+// -------------------------
+
+.c-brand-1   { color: $brand-1; }
+
+// Grayscale colors
+// -------------------------
+
+.c-black     { color: $black; }
+.c-white     { color: $white; }
+
+// Gray colors
+// -------------------------
+
+.c-gray--1    { color: $gray-1; }
+.c-gray--2    { color: $gray-2; }
+.c-gray--3    { color: $gray-3; }
+.c-gray--4    { color: $gray-4; }
+.c-gray--5    { color: $gray-5; }
+
+// UI colors
+// -------------------------
+
+.c-positive  { color: $positive; }
+.c-warning   { color: $warning; }
+.c-negative  { color: $negative; }
+.c-link      { color: $link; }
+
+// Solarized colors
+// -------------------------
+
+.c-solarized-base03   { color: $solarized-base03; }
+.c-solarized-base02   { color: $solarized-base02; }
+.c-solarized-base01   { color: $solarized-base01; }
+.c-solarized-base00   { color: $solarized-base00; }
+.c-solarized-base0    { color: $solarized-base0; }
+.c-solarized-base1    { color: $solarized-base1; }
+.c-solarized-base2    { color: $solarized-base2; }
+.c-solarized-base3    { color: $solarized-base3; }
+.c-solarized-yellow   { color: $solarized-yellow; }
+.c-solarized-orange   { color: $solarized-orange; }
+.c-solarized-red      { color: $solarized-red; }
+.c-solarized-magenta  { color: $solarized-magenta; }
+.c-solarized-violet   { color: $solarized-violet; }
+.c-solarized-blue     { color: $solarized-blue; }
+.c-solarized-cyan     { color: $solarized-cyan; }
+.c-solarized-green    { color: $solarized-green; }

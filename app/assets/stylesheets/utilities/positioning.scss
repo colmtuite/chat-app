@@ -1,0 +1,44 @@
+//
+// Positioning
+// -------------------------
+
+// Pin an element to the top left edge of its parent.
+// -------------------------
+.u-posPinTL {
+  @extend .position-absolute;
+  top: 0;
+  left: 0;
+}
+
+// Fix an element to the top left edge.
+// -------------------------
+.u-posFixTL {
+  @extend .position-fixed;
+  top: 0;
+  left: 0;
+}
+
+// Pin an element to all corners. But when a width and/or height are
+// provided, the element will be centered in its nearest
+// relatively-positioned ancestor.
+// -------------------------
+
+.u-posPinAll {
+  @extend .position-absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+// Fix an element to all corners.
+// -------------------------
+
+.u-posFixAll {
+  @extend .position-fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

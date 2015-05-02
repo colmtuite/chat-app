@@ -1,0 +1,20 @@
+<h1 class="fs-xl mb-l">Chats</h1>
+
+<% @chats.each do |chat| %>
+	<%= link_to chat, class: "display-block pa-m" do %>
+		<div>
+		  <span style="display: block;"><%= chat.title %></span>
+		  <% chat.users.each do |user| %>
+      	<span style="display: inline-block; color: #b7b9bd; font-size: 12px;"><%= user.name %></span>
+      <% end %>
+		  <% chat.comments.last(1).each do |comment| %>
+      	<span style="display: block; color: #b7b9bd; font-size: 12px;"><%= comment.content %></span>
+      <% end %>
+		</div>
+	<% end %>
+<% end %>
+
+<%= form_for @chat do |f| %>
+  <%= f.text_field :title, placeholder: "Chat title", autocomplete: "off" %>
+  <%= f.submit "Start chat" %>
+<% end %>

@@ -1,0 +1,46 @@
+<%= link_to "Back to chats", chats_path, class: "display-block mb-l" %>
+
+<h1 class="fs-xl mb-l"><%= @chat.title %></h1>
+
+<% @chat.users.each do |users| %>
+	<div>
+	  <span><%= user.name %></span>
+	</div>
+<% end %>
+
+Users:
+<%= form_for @chat do |f| %>
+  <% for user in User.find(:all) %>
+    <%= label_tag do %>
+      <%= check_box_tag "chat[user_ids][]", user.id, @chat.users.include?(user) %>
+      <%= user.name %>
+    <% end %>
+  <% end %>
+  
+  <%= f.submit "Add users" %>
+<% end %>
+
+<div style="margin-top: 40px;"></div>
+
+<div id="comment-count"><%= @chat.comments.count %></div>
+
+<ul id="comments">
+<% @chat.comments.each do |comment| %>
+	<li class="position-relative" id="comment-<%= comment.id %>">
+	  <span class="display-block"><%= comment.user.name %></span>
+	  <p><%= comment.content %></p>
+	  <time><%#= l comment.created_at, :format => :short_datetime %></time>
+	  <% if @chat.owner_email == current_user.email || comment.user_id == current_user.id %>
+	    <%= link_to "Delete", comment, method: :delete, data: { confirm: "Really?", remote: true }, style: "position: absolute; top: 0; right: 0; font-size: 12px" %>
+	  <% end %>
+	</li>
+<% end %>
+</ul>
+
+<div style="position: absolute; bottom: 40px; width: 100%;">
+  <%= form_for @comment, remote: "true" do |f| %>
+    <%= f.hidden_field :chat_id, value: @chat.id %>
+    <%= f.text_area :content, placeholder: "Write a comment", class: "textarea" %>
+    <%= f.submit "Send", class: "btn" %>
+  <% end %>
+</div>

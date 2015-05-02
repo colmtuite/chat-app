@@ -1,0 +1,35 @@
+//
+// Box Sizing
+// -------------------------
+
+// Reset all margins and padding
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+// Set global `box-sizing` to `border-box`.
+
+div,
+article,
+aside,
+section,
+main,
+footer,
+header,
+form,
+fieldset,
+pre,
+code,
+p,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea {
+  @extend .boxSizing-borderBox;
+}

@@ -1,0 +1,20 @@
+//
+// Border Color
+// -------------------------
+
+.bc-white        { border-color: $white; }
+
+.bc-black        { border-color: $black; }
+.bc-gray--1       { border-color: $gray-1; }
+.bc-gray--2       { border-color: $gray-2; }
+.bc-gray--3       { border-color: $gray-3; }
+.bc-gray--4       { border-color: $gray-4; }
+.bc-gray--5       { border-color: $gray-5; }
+.bc-positive     { border-color: $positive; }
+.bc-warning      { border-color: $warning; }
+.bc-negative     { border-color: $negative; }
+.bc-link         { border-color: $link; }
+.bc-soft         { border-color: $soft; }
+
+.bc-bevel        { border-color: $gray-3 darken($gray-3, 8%) darken($gray-3, 20%); }
+.bc-bevelInverse { border-color: darken($gray-3, 20%) darken($gray-3, 8%) $gray-3; }

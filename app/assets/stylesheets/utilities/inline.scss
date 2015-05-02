@@ -1,0 +1,22 @@
+//
+//  Inline
+//  -------------------------
+
+//  Place elements inline. Useful for navs, horizontal lists, controls etc.
+//
+//  How to use:
+//
+//  <div class="u-inline">
+//    <div><a href=#>Home</a></div>
+//    <div><a href=#>About</a></div>
+//    <div><a href=#>Pricing</a></div>
+//    <div><a href=#>Contact</a></div>
+//  </div>
+
+.u-inline {
+  @extend .u-cf;
+}
+
+.u-inline > div {
+  @extend .float-left;
+}

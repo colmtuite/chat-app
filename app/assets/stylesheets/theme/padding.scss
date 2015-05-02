@@ -1,0 +1,75 @@
+//
+// Padding
+// -------------
+
+// Variables
+// -------------
+
+$padding-s: 10px;
+$padding-m: 20px;
+$padding-l: 30px;
+$padding-xl: 40px;
+$padding-xxl: 100px;
+
+// Preset paddings
+// -------------
+
+.pa-1  { padding: 1px; }
+.pt-1  { padding-top: 1px; }
+.pr-1  { padding-right: 1px; }
+.pb-1  { padding-bottom: 1px; }
+.pl-1  { padding-left: 1px; }
+.ptb-1 { padding-top: 1px; padding-bottom: 1px; }
+
+.pa-2  { padding: 2px; }
+.pt-2  { padding-top: 2px; }
+.pr-2  { padding-right: 2px; }
+.pb-2  { padding-bottom: 2px; }
+.pl-2  { padding-left: 2px; }
+.ptb-2 { padding-top: 2px; padding-bottom: 2px; }
+
+.pa-4  { padding: 4px; }
+.pt-4  { padding-top: 4px; }
+.pr-4  { padding-right: 4px; }
+.pb-4  { padding-bottom: 4px; }
+.pl-4  { padding-left: 4px; }
+.ptb-4 { padding-top: 4px; padding-bottom: 4px; }
+
+// Custom paddings
+// -------------
+
+.pa-s  { padding: $padding-s; }
+.pt-s  { padding-top: $padding-s; }
+.pr-s  { padding-right: $padding-s; }
+.pb-s  { padding-bottom: $padding-s; }
+.pl-s  { padding-left: $padding-s; }
+.ptb-s { padding-top: $padding-s; padding-bottom: $padding-s; }
+
+.pa-m  { padding: $padding-m; }
+.pt-m  { padding-top: $padding-m; }
+.pr-m  { padding-right: $padding-m; }
+.pb-m  { padding-bottom: $padding-m; }
+.pl-m  { padding-left: $padding-m; }
+.ptb-m { padding-top: $padding-m; padding-bottom: $padding-m; }
+
+.pa-l  { padding: $padding-l; }
+.pt-l  { padding-top: $padding-l; }
+.pr-l  { padding-right: $padding-l; }
+.pb-l  { padding-bottom: $padding-l; }
+.pl-l  { padding-left: $padding-l; }
+.ptb-l { padding-top: $padding-l; padding-bottom: $padding-l; }
+
+.pa-xl  { padding: $padding-xl; }
+.pt-xl  { padding-top: $padding-xl; }
+.pr-xl  { padding-right: $padding-xl; }
+.pb-xl  { padding-bottom: $padding-xl; }
+.pl-xl  { padding-left: $padding-xl; }
+.ptb-xl { padding-top: $padding-xl; padding-bottom: $padding-xl; }
+
+.pa-xxl  { padding: $padding-xxl; }
+.pt-xxl  { padding-top: $padding-xxl; }
+.pr-xxl  { padding-right: $padding-xxl; }
+.pb-xxl  { padding-bottom: $padding-xxl; }
+.pl-xxl  { padding-left: $padding-xxl; }
+.ptb-xxl { padding-top: $padding-xxl; padding-bottom: $padding-xxl; }
+

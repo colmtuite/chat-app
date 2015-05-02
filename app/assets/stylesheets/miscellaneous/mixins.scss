@@ -1,0 +1,88 @@
+// Responsive breakpoints
+@mixin breakpoint($point) {
+  @if $point == bp1 {
+    @media (min-width: $bp1) { @content; }
+  }
+  @else if $point == bp2 {
+    @media (min-width: $bp2) { @content; }
+  }
+  @else if $point == bp3 {
+    @media (min-width: $bp3)  { @content; }
+  }
+  @else if $point == bp4 {
+    @media (min-width: $bp4)  { @content; }
+  }
+  @else if $point == bp5 {
+    @media (min-width: $bp5)  { @content; }
+  }
+  @else if $point == bp6 {
+    @media (min-width: $bp6)  { @content; }
+  }
+}
+
+@mixin opacity($value) {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$value);
+  opacity: $value;
+}
+
+@mixin user-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+@mixin scale($value) {
+  -webkit-transform: scale($value);
+	   -moz-transform: scale($value);
+	    -ms-transform: scale($value);
+	     -o-transform: scale($value);
+	        transform: scale($value);
+}
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	   -moz-transition: $args;
+	    -ms-transition: $args;
+	     -o-transition: $args;
+	        transition: $args;
+}
+
+@mixin rounded($topL, $topR, $botR, $botL) {
+  -webkit-border-radius: $topL $topR $botR $botL;
+	   -moz-border-radius: $topL $topR $botR $botL;
+	        border-radius: $topL $topR $botR $botL;
+	 -khtml-border-radius: $topL $topR $botR $botL;
+}
+
+@mixin box-shadow($hor, $vert, $blur, $color) {
+	-webkit-box-shadow: $hor $vert $blur $color;
+	   -moz-box-shadow: $hor $vert $blur $color;
+	     -o-box-shadow: $hor $vert $blur $color;
+	        box-shadow: $hor $vert $blur $color
+}
+
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+// Gradient
+@mixin gradient($value1, $value2) {
+  background-color:$value1;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($value1), to($value2));
+	background-image: -webkit-linear-gradient(top, $value1, $value2);
+	background-image: -moz-linear-gradient(top, $value1, $value2);
+	background-image: -ms-linear-gradient(top, $value1, $value2);
+	background-image: -o-linear-gradient(top, $value1, $value2);
+}
+
+// Calc
+@mixin calc($property, $expression) { 
+  #{$property}: -moz-calc(#{$expression}); 
+  #{$property}: -o-calc(#{$expression}); 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+}

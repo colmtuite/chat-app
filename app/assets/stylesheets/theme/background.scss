@@ -1,0 +1,96 @@
+//
+// Background Colors
+// -------------------------
+
+// This file depends on color-scheme.scss and
+// therefore must follow it in the compiler.
+
+// Single-responsibility classes for every background color
+// in the color scheme.
+
+// Brand backgrounds
+// -------------------------
+
+.bg-brand--1   { background: $brand-1; }
+
+// Grayscale backgrounds
+// -------------------------
+
+.bg-none      { background: none; }
+.bg-black     { background: $black; }
+.bg-white     { background: $white; }
+
+// Gray backgrounds
+// -------------------------
+
+.bg-gray--1    { background: $gray-1; }
+.bg-gray--2    { background: $gray-2; }
+.bg-gray--3    { background: $gray-3; }
+.bg-gray--4    { background: $gray-4; }
+.bg-gray--5    { background: $gray-5; }
+
+// UI backgrounds
+// -------------------------
+
+.bg-positive  { background: $positive; }
+.bg-warning   { background: $warning; }
+.bg-negative  { background: $negative; }
+.bg-link      { background: $link; }
+.bg-soft      { background: $soft; }
+
+.bg-soft--d   { background: $soft--d; }
+
+// Test balance trick
+// -------------------------
+
+//[class^="bg-"] {
+//  -webkit-filter: grayscale(1);
+//}
+
+// Solarized backgrounds
+// -------------------------
+
+.bg-solarized-base3  { background: $solarized-base3; }
+
+
+
+
+
+
+
+
+
+
+
+.bg-grayDark {
+  background: $grayDark;
+  color: #fff;
+}
+
+.bg-transDark {
+  background: rgba(0,0,0,.85);
+  color: #fff;
+}
+
+%chromeLight {
+//  background: rgba(lighten($gray2, 22%),.98);
+//  color: lighten($base, 50%);
+  
+  background: rgba(lighten($gray2, 22%),.94);
+  color: lighten($grayDark, 15%);
+  
+//  background: rgba(#202024,.9);
+//  color: lighten($grayDark, 35%);
+}
+
+.transparentFull {
+  background: none;
+}
+
+.transparentWhite {
+  background: rgba(255,255,255,.94);
+}
+
+.transparentDark {
+  background: rgba(0,0,0,.85);
+}

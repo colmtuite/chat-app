@@ -1,0 +1,97 @@
+//
+// Color Scheme
+// -------------------------
+
+// The entire color scheme for Assembla. Colors are grouped into 5
+// categories - grayscale, gray, brand, UI and transparent. In each
+// category, we first define the base colors. Then we define darker
+// shades or lighter tints for each of those base colors, as they
+// are needed.
+
+// Legend
+// -------------------------
+
+//  d = Dark
+//  l = Light
+//  x = Extra
+
+// Brand Colors
+// -------------------------
+
+$brand-1: #00a85f;
+
+// Grayscale Colors
+// -------------------------
+
+$white: #fff;
+$black: #000;
+
+// Gray Colors
+// -------------------------
+
+$gray-1: lighten(#213040, 5%);
+$gray-2: #748496;
+$gray-3: #9aa5b2;
+$gray-4: #dcdfe4;
+$gray-5: #f6f7f8;
+
+// UI Colors
+// -------------------------
+
+$positive: #5CB390;
+$negative: #E26E6A;
+$link: #0aa3f3;
+$warning: #e6a100;
+$soft: #e7fafd;
+
+$soft--d: darken($soft, 2%);
+
+// Transparency
+// -------------------------
+
+$transparent-white: rgba(255,255,255,.5);
+$transparent-black: rgba(0,0,0,.5);
+
+$transparent-white--d: rgba(255,255,255,.85);
+$transparent-white--l: rgba(255,255,255,.2);
+
+$transparent-black--d: rgba(0,0,0,.85);
+$transparent-black--l: rgba(0,0,0,.2);
+
+// Solarized
+// -------------------------
+
+$solarized-base03: #002b36;
+$solarized-base02: #073642;
+$solarized-base01: #586e75;
+$solarized-base00: #657b83;
+$solarized-base0: #839496;
+$solarized-base1: #93a1a1;
+$solarized-base2: #eee8d5;
+$solarized-base3: #fdf6e3;
+$solarized-yellow: #b58900;
+$solarized-orange: #cb4b16;
+$solarized-red: #dc322f;
+$solarized-magenta: #d33682;
+$solarized-violet: #6c71c4;
+$solarized-blue: #268bd2;
+$solarized-cyan: #2aa198;
+$solarized-green: #859900;
+
+
+
+
+
+$accent: #1899EF;
+$complement: #ff4166;
+$base: #394652;
+$neutral: #e8ecf0;
+
+$blue: #009bdd;
+
+$gray1: #47525e;
+$gray2: lighten($gray1, 45%);
+$gray3: lighten($gray1, 55%);
+$gray4: #8097AB;
+$gray5: #D7DFEB;
+$grayDark: #394652;

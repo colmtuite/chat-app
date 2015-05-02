@@ -1,0 +1,109 @@
+//
+// A place for all your shameful CSS
+// -------------------------
+
+// If you can't be arsed thinking what the best
+// way to write something is, just whack it in
+// here and refactor it later. Almost anything
+// goes in here except two things:
+
+// 1) Never change html due to the mess you made here.
+// 2) Never use variables here.
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Reset
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+small {
+  font-size: 100%;
+  margin: 0;
+  font-weight: normal;
+}
+
+// Sizing
+// -------------------------
+
+html {
+  font-size: 100%;
+  line-height: 1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// Base styles
+// -------------------------
+
+body,html,input,textarea,button,select {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', "Helvetica Neue", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #303135;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #18c;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  background: #18c;
+  outline: none;
+  padding: 6px 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.input--invisible {
+  outline: none;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.textarea {
+  border: 1px solid #c8cace;
+  border-top-color: #b7b9bd;
+  outline: none;
+  padding: 8px;
+  height: 66px;
+  font-size: 12px;
+  border-radius: 2px;
+  resize: none;
+  width: 100%;
+  line-height: 1,2;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 14px;
+}
