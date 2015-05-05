@@ -27,18 +27,18 @@ Users:
 <ul id="comments">
 <% @chat.comments.each do |comment| %>
 	<li class="position-relative" id="comment-<%= comment.id %>">
-	  <span class="display-block"><%= comment.user.name %></span>
-	  <p><%= comment.content %></p>
-	  <time><%#= l comment.created_at, :format => :short_datetime %></time>
-	  <% if @chat.owner_email == current_user.email || comment.user_id == current_user.id %>
-	    <%= link_to "Delete", comment, method: :delete, data: { confirm: "Really?", remote: true }, style: "position: absolute; top: 0; right: 0; font-size: 12px" %>
-	  <% end %>
-	</li>
+    <span class="display-block"><%= comment.user.name %></span>
+    <p><%= comment.content %></p>
+    <time><%#= l comment.created_at, :format => :short_datetime %></time>
+    <% if @chat.owner_email == current_user.email || comment.user_id == current_user.id %>
+      <%= link_to "Delete", comment, method: :delete, data: { confirm: "Really?", remote: true }, style: "position: absolute; top: 0; right: 0; font-size: 12px" %>
+    <% end %>
+  </li>
 <% end %>
 </ul>
 
 <div style="position: absolute; bottom: 40px; width: 100%;">
-  <%= form_for @comment, remote: "true" do |f| %>
+  <%= form_for @comment, remote: true do |f| %>
     <%= f.hidden_field :chat_id, value: @chat.id %>
     <%= f.text_area :content, placeholder: "Write a comment", class: "textarea" %>
     <%= f.submit "Send", class: "btn" %>

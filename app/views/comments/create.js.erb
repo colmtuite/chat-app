@@ -1,4 +1,7 @@
-$("#comment_content").before('<div id="flash_notice">Some message</div>');
+//$("#comment_content").before('<div id="flash_notice">Some message</div>');
 //$("#comment-count").html("<%#= @chat.comments.count %>");
-$("#comments").html("<%= @chat.comments.last %>");
+
+var comment = '<li class="position-relative" id="comment-<%= @comment.id %>"><span class="display-block"><%= @comment.user.name %></span><p><%= @comment.content %></p><% if @chat.owner_email == current_user.email || @comment.user_id == current_user.id %><%= link_to "Delete", @comment, method: :delete, data: { remote: true }, style: "position: absolute; top: 0; right: 0; font-size: 12px" %><% end %></li>';
+$('#comments').append(comment);
+
 $('#comment_content').val('').focus();
